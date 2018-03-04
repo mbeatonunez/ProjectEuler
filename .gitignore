@@ -60,3 +60,5 @@ dkms.conf
 *.txt
 Makefile
 *.workspace
+*.session
+*.batch_build

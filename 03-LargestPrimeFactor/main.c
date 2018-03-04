@@ -19,11 +19,12 @@ int main(int argc, char **argv)
 {
     uint64_t value =  600851475143;             //scary large number
     uint32_t value2 = sqrtl(value);             //The greates prime factor of n is at most equal to the square root of n
+
     printf("Prime Factors of %"PRIu64": \n", value);
     for (uint32_t i = 2; i <= value2 ; i++){    //only count to the square root of n
         if ((value % i) == 0){                  //if the value of i is a factor of the scary large number
             if (isPrime(i)) {                   //check if it is prime. If so, print it.
-                printf("%"PRIu32" ", i);
+                printf("%u ", i);
             }
         }
     } printf("\n");                             //once everything is done, print a new line.
