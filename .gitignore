@@ -53,3 +53,10 @@ dkms.conf
 *.cbp
 *.depend
 *.layout
+*.db
+*.tags
+*.mk
+*.project
+*.txt
+Makefile
+*.workspace
