@@ -21,7 +21,7 @@ int main(int argc, char **argv)
     uint32_t max_pal = 0;
 
     for (uint32_t i = min_count; i < max_count; i++){
-        for (uint32_t j = i; j < max_count; j++){
+        for (uint32_t j = i; j < max_count; j++){   // set j to i to avoid checking the same number twice
            if (isPal(i*j) ){
                if (i*j > max_pal)                   //check for the largest value.
                     max_pal = i*j; 
