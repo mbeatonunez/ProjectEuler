@@ -11,18 +11,15 @@
 #include <math.h>
 
 int isPrime(int num){
-//    int check = 0;                      //keeps track of the number of remainders
-//    int max_factor = num / 2;           //optimized the number of prime checks
-//    for (int i = 2; i <= max_factor; i++)
-//          if(!(num % i)) 
-//              check++;                  //checks if a number is divisable by any before it
-//    if(check == 0) 
-//        return 1;                       //if a number is not divisible by any number, then it is a prime
-//    else 
-//        return 0;                       //if divisable by a number greater than 1, then it is not prime.
- if (num == 2 || num == 3 || num == 5 || num == 7) return 1;
- else if (!(num%2) || !(num%3) || !(num%5) || !(num%7)) return 0;
- else return 1;
+    int check = 0;                      //keeps track of the number of remainders
+    int max_factor = num / 2;           //optimized the number of prime checks
+    for (int i = 2; i <= max_factor; i++)
+          if(!(num % i)) 
+              check++;                  //checks if a number is divisable by any before it
+    if(check == 0) 
+        return 1;                       //if a number is not divisible by any number, then it is a prime
+    else 
+        return 0;                       //if divisable by a number greater than 1, then it is not prime.
 }
 
 int main(int argc, char **argv)
